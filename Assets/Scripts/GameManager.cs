@@ -5,7 +5,8 @@ public class GameManager : MonoBehaviour
 {
 
     public float restartDelay = 1f;
-    bool gameEnd = false;
+    public bool gameEnd = false;
+    public GameObject completeLevelUI;
 
     public void GameOver() {
         if (!gameEnd) {
@@ -16,5 +17,10 @@ public class GameManager : MonoBehaviour
 
     void Restart() {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    public void CompleteLevel() {
+        completeLevelUI.SetActive(true);
+        gameEnd = true;
     }
 }
