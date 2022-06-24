@@ -1,6 +1,6 @@
 # Cubetastic
 
-My First Game to learn Unity ans C#
+My First Game to learn Unity and C#
 
 ## Where to play ?
 
